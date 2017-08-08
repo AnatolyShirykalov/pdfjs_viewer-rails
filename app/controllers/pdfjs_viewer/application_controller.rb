@@ -5,7 +5,7 @@ module PdfjsViewer
     private
 
     def allow_iframe
-      response.headers['X-Frame-Options'] = "ALLOWALL"
+      response.headers.delete('X-Frame-Options')
     end
   end
 end
