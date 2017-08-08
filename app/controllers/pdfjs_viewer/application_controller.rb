@@ -1,6 +1,6 @@
 module PdfjsViewer
   class ApplicationController < ActionController::Base
-    before_action :allow_iframe
+    after_action :allow_iframe
 
     private
 
